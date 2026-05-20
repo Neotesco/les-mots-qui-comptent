@@ -33,7 +33,7 @@ const ALL_QUOTES = [
   },
   {
     id: 4,
-    text: "L'imagination est plus importante que le savoir",
+    text: "L'imagination est plus importante que le savoir.",
     textEn: "Imagination is more important than knowledge.",
     author: "Albert Einstein",
     era: "Physicien, 1879–1955",
