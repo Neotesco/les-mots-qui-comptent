@@ -106,6 +106,17 @@ function resetAdminPublishForm() {
   _showLastDay();
 }
 
+// ── Déconnexion ───────────────────────────────────────────────────────────────
+function adminLogout() {
+  _adminUnlocked = false;
+  resetAdminPublishForm();
+  document.getElementById('admin-dashboard').setAttribute('hidden', '');
+  document.getElementById('admin-login-screen').removeAttribute('hidden');
+  document.getElementById('admin-password-input').value = '';
+  document.getElementById('admin-password-error').setAttribute('hidden', '');
+  showTab('today');
+}
+
 // ── Point d'entrée ────────────────────────────────────────────────────────────
 function renderAdminPanel() {
   if (!_adminUnlocked) {
