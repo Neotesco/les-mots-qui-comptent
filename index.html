@@ -335,7 +335,29 @@
 
             <!-- Dashboard admin : formulaire de publication -->
             <div id="admin-dashboard" hidden>
-                <p class="section-label">Publier une nouvelle citation</p>
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem">
+                    <p class="section-label" style="margin-bottom:0">Publier une nouvelle citation</p>
+                    <button onclick="adminLogout()" style="
+                        display:inline-flex;align-items:center;gap:6px;
+                        font-size:13px;font-weight:500;
+                        color:var(--text-secondary);
+                        background:var(--bg-subtle);
+                        border:1px solid var(--border-medium);
+                        border-radius:var(--radius-full);
+                        padding:6px 14px;cursor:pointer;
+                        transition:color var(--transition),background var(--transition);
+                    "
+                    onmouseover="this.style.color='var(--danger)';this.style.background='var(--danger-light)';this.style.borderColor='var(--danger)'"
+                    onmouseout="this.style.color='var(--text-secondary)';this.style.background='var(--bg-subtle)';this.style.borderColor='var(--border-medium)'"
+                    aria-label="Se déconnecter">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/>
+                            <polyline points="16 17 21 12 16 7"/>
+                            <line x1="21" y1="12" x2="9" y2="12"/>
+                        </svg>
+                        Se déconnecter
+                    </button>
+                </div>
 
                 <div class="submit-form" id="admin-publish-form">
 
